@@ -23,7 +23,6 @@ public class AlphaBeta extends Algorithm {
 				grillenew = grilleDepart.clone();
 				grillenew.ajouterCoup(colonne,symboleMax);
 				result = minValue(grillenew,tourDepart,Constantes.SCORE_MAX_NON_DEFINI,Constantes.SCORE_MIN_NON_DEFINI);
-				System.out.println(colonne+" : "+result);
 				if(result>max) {
 					coupMax=colonne;
 					max=result;

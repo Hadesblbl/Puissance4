@@ -26,7 +26,6 @@ public class Minimax extends Algorithm {
 				grillenew = grilleDepart.clone();
 				grillenew.ajouterCoup(colonne,this.symboleMax);
 				result = minValue(grillenew,tourDepart);
-				System.out.println(colonne+" : "+result);
 				if(result>max) {
 					coupMax=colonne;
 					max=result;
